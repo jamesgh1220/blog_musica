@@ -1,0 +1,323 @@
+/*IMPORTAR FUENTE*/
+@font-face{
+    font-family:'fajala';
+    src: url(../fonts/yorkwhiteletter.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'fuente';
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*ESTILOS GENERALES*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Helvetica, Arial;
+    text-decoration: none;
+}
+
+.clearfix{
+    clear: both;/*QUITAR FLOTADO*/
+    float: none;
+}
+
+body{
+    background: url(../img/image.jpg);
+}
+
+.alerta{
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background: green;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.alerta-error{
+    background: red;
+}
+
+.fecha{
+    color: #4e4e4e;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/*CABECERA*/
+
+#cabecera{
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+    margin-left: 103px;
+}
+
+#logo{
+    float: left;
+    width: 540px;
+    height: 120px;
+}
+
+#logo a{
+    font-family: 'fajala', Helvetica;
+    font-size: 65px;
+    letter-spacing: 2px;
+    color: #007ee5;
+    text-shadow: 0px 0px 0px  black, 3px 3px 0px black, 2px 2px 0px black;/*SOMBRA*/
+    transition: all 700ms;/*TITILEA*/
+    line-height: 110px;
+}
+
+/*CURSOR SOBRE EL LOGO*/
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -2px -2px 0px #ccc,  -2px -2px 0px black; 
+}
+
+/*ESTILOS MENÚ*/
+
+#menu{
+    clear: both;
+    width: auto;
+    height: 40px;
+    background: linear-gradient(to bottom, #8ac1fc 0px, #e9e9e9 100%); /*GRADIENTE*/
+    border: 1px solid #007ee5;
+    border-radius:  8px;
+    box-shadow: 0px 1px 1px #e9e9e9; /*SOMBRA*/
+    overflow: hidden;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+    line-height: 40px;/*PARA QUE SE CENTREN LOS ELEMENTOS EN VERTICAL DEL (CATEGORIAS, SOBRE MI,...)*/
+}
+
+#menu ul li a{
+    display: block;
+    padding-left: 11px; /*que se separen los objetos del menu*/
+    padding-right: 11px; /*que se separen los objetos del menu*/
+    font-size: 16px;
+    font-family: 'fuente';
+    color: black;
+}
+
+#menu ul li a:hover{
+    background: linear-gradient(to bottom, #3d96fc 0px, rgb(206, 206, 206) 100%);
+    /*color: white*/
+}
+
+/*ESTILOS CONTENIDO PPAL*/
+#contenedor{
+    width: 85%;
+    height: auto;
+    margin: 0px auto;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+/*BARRA LATERAL*/
+#sidebar{
+    float: right;
+    width: 25%;
+    height: auto;
+}
+
+.identificate h3{
+    font-family: 'fuente', Helvetica;
+    font-size: 25px;
+    color: #007ee5;
+}
+
+.bloque{
+    display: block;
+    width: 105%;
+    margin: 0px auto;
+    margin-left: -25px;
+    margin-bottom: 25px;
+    background: url(../img/cubes.png);
+    padding: 13px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px black,0px 3px 3px #007ee5, 0px 0px 5px #007ee5 inset, 0px -1px 2px #007ee5 inset;
+}
+
+.bloque h3{
+    margin-bottom: 15px;
+}
+
+.bloque label{
+    font-family: 'fuente';
+}
+
+label, input[type='text'], input[type='email'], input[type='password']{
+    display: block;
+    width: 95%;
+}
+
+input[type='text'], input[type='email'], input[type='password']{
+    margin-top: 5px;
+    padding: 3px;
+}
+
+input[type='submit'], input[type='button'],.boton{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    padding: 7px;
+    font-family: 'fuente';
+}
+
+.boton{
+    color: white !important;
+    width: 100px;
+    text-align: center;
+}
+#botones-login a{
+    padding: 5px;
+    width: 30px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#botones-login label{
+    font-size: 13px;
+    padding: 5px;
+    width: 39px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.boton-naranja{
+    background: orange;
+    border-color: rgb(180, 132, 0);
+}
+
+.boton-verde{
+    background: #12ca12;
+    border-color: #12ca12;
+}
+
+.boton-rojo{
+    background: red;
+    border-color: #444;
+}
+
+#register{
+    margin-top: 20px;
+}
+
+/*PRINCIPAL*/
+#principal{
+    float: left;
+    width: 65%;
+    min-height: 657px;
+    background: url(../img/cubes.png);
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px black,0px 3px 3px #007ee5, 0px 0px 5px #007ee5 inset, 0px -1px 2px #007ee5 inset;
+    margin-left: 10px;
+    padding: 11px;
+    overflow: hidden;
+}
+
+#principal a{
+    color: #333;
+}
+
+#principal h1{
+    font-size: 38px;
+    color: #444;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: 'fuente';
+    margin: 2px;
+}
+
+#principal h2{
+    font-size: 25px;
+    color: #007ee5;
+    text-shadow: 1px 1px 2px #ccc;
+    letter-spacing: 1px;
+    font-family: 'fuente';
+    margin-top: 25px;
+}
+
+#principal p{
+    margin-top: 8px;
+    font-family: 'fuente';
+}
+
+/*Es un link que se convierte en boton*/
+#ver-todas a{
+    display: block;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    width: 175px;
+    margin: 0px auto;
+    margin-top: 65px;
+    font-family: 'fuente';
+    text-align: center;
+}
+
+.entrada p{
+    font-family: Helvetica, sans-serif ;
+}
+
+/*PIE DE PAGINA*/
+.socialMedia {
+    margin: 20px auto;
+}
+
+.socialMedia i {
+    font-size: 30px;
+    color: #2979CD;
+}
+
+.socialMedia a {
+    margin-right: 18px;
+}
+
+.socialMedia a:last-of-type {
+    margin-right: 0px;
+}
+
+.socialMedia i:hover {
+    color: black;
+}
+
+.socialMedia p{
+    margin-top: 10px;
+}
+
+#pie{
+    clear: both;/*POR SI TIENE QUE LIMPIAR ALGUN FLOTADO*/
+    width: 80%;
+    margin: 0px auto;
+    background: url(../img/cubes.png);
+    border: 1px solid #c9c9c9;
+    border-bottom: none;
+    border-radius: 8px 8px 0px 0px;
+    color: #666;
+    height: auto;
+    padding: 1px;
+    text-align: center;
+}
